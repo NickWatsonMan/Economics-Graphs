@@ -23,7 +23,7 @@
             </div>
                 
             <div class="row demandAndSupply"> 
-                <div class="col-md-13 description">
+                <div class="col-md-12 description">
                     Supply and demand is perhaps one of the most fundamental concepts of economics and it 
                     is the backbone of a market economy. Demand refers to how much (quantity) of a product or 
                     service is desired by buyers. The quantity demanded is the amount of a product people are willing 
