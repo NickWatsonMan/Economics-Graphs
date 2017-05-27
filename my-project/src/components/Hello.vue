@@ -1,18 +1,18 @@
 <template>
-  <div class="hello">
+<div class="hello">
   <head>
   </head>
-    <h1>Graphs of economics</h1>
-        <div id="result">
-          <h1></h1>
-        </div>
-
-        <div style="width: 400px">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4"><h1>Graphs of economics</h1></div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
           <canvas id="demandSupplyChart" width="400" height="400"></canvas>
           <p>Demand and Supply</p>
-        </div>
-        
+    </div>
   </div>
+</div>
 </template>
 <script>
 export default {
@@ -29,12 +29,10 @@ export default {
 <style scoped>
 h1 {
   font-weight: normal;
-  margin-left: 35%;
 }
 
 p {
   font-weight: normal;
-  margin-left: 26%;
-  margin-top: -20px;
+  margin-left: 25%;
 }
 </style>
