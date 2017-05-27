@@ -6,17 +6,13 @@
     <div class="col-md-4"></div>
     <div class="col-md-4"><h1>Graphs of economics</h1></div>
   </div>
-  <div class="row">
-    <div class="col-md-4">
-          <canvas id="demandSupplyChart" width="400" height="400"></canvas>
-          <p>Demand and Supply</p>
-    </div>
-  </div>
 </div>
 </template>
+
 <script>
 export default {
   name: 'hello',
+  
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -35,4 +31,9 @@ p {
   font-weight: normal;
   margin-left: 25%;
 }
+
+.description{
+  margin-top: 21px;
+}
+
 </style>

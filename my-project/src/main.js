@@ -22,6 +22,7 @@ new Vue({
   components: { App }
 })
 
+
 //drawing demand/supply chart
 var ctx = document.getElementById("demandSupplyChart").getContext('2d');
 var myChart = new Chart(ctx, {
