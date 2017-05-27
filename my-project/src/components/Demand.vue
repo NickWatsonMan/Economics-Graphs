@@ -1,7 +1,7 @@
 <template>
 <div id="demand">
 
-    <button class="btndemand" v-on:click="show = !show">
+    <button class="buttons" v-on:click="show = !show">
       Demand And Supply
     </button>
     
@@ -51,12 +51,12 @@ export default {
 </script>
 
 
+
 <style>
 .demand{
      float: left;
 }
-.btndemand{
-}
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s
 }
@@ -64,3 +64,4 @@ export default {
   opacity: 0
 }
 </style>
+
