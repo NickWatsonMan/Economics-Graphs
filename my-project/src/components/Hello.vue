@@ -32,8 +32,5 @@ p {
   margin-left: 25%;
 }
 
-.description{
-  margin-top: 21px;
-}
 
 </style>

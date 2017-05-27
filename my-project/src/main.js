@@ -27,20 +27,49 @@ new Vue({
 var ctx = document.getElementById("demandSupplyChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
+    
    data: {
-      datasets: [{
+     labels: ["0","10", "20"],
+      datasets: [
+       {
+        label: "Equillibrium",
+        data: [10, 10],
+        fill: false,
+        borderColor: 'red',
+        pointRadius: 8,
+        backgroundColor: 'red',
+        borderDash: [5, 5],
+      }, {
       label: "Demand",
-      data: [{x:2, y:20}, {x:2, y:2}], //demand info
+      data: [20, 10, 0], //demand info
       fill: false,
       borderColor: '#000000',
-    }, {
+      backgroundColor: '#000000',
+     }, {
         label: "Supply",
-        data: [{x:20, y:2}, {x:20, y:20}], //supply info
+        data: [0, 10, 20], //supply info
         fill: false,
         borderColor: '#f49242',
+        backgroundColor: '#f49242',
       }],
    },
     options: {          
-      showLines: true, // disable for all datasets    
-        }
+        showLines: true, // disable for all datasets   
+        scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Quantity'
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Price ($)'
+                        }
+                    }]
+                }
+      },
     });
