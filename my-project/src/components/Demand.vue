@@ -1,9 +1,9 @@
 <template>
 <div id="demand">
 
-    <button class="buttons" v-on:click="show = !show">
+    <a href="#"><h3 class="buttons" v-on:click="show = !show">
       Demand And Supply
-    </button>
+    </h3></a>
     
     <div class="row">
             <div class="col-md-3 demand">
@@ -18,9 +18,7 @@
         <p v-if="!show">
             <div>
 
-            <div class="row demandAndSupply">
-                <div class="col-md-6"><h3>Demand and Supply</h3></div>
-            </div>
+
                 
             <div class="row demandAndSupply"> 
                 <div class="col-md-12 description">
@@ -48,7 +46,7 @@
 export default {
   name: 'demand',
   data() {
-     return { show: true
+     return { show: false
 }
   }
 };
@@ -58,6 +56,9 @@ export default {
 
 
 <style>
+.buttons{
+  text-align: center; 
+}
 .demandAndSupply{
     margin-left:10px;
 }

@@ -73,3 +73,82 @@ var myChart = new Chart(ctx, {
                 }
       },
     });
+
+//drawing elastic 
+//perfect elasticity
+var ctx = document.getElementById("perfectElasticity").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    
+   data: {
+     labels: ["0","10", "20"],
+      datasets: [
+       {
+      label: "Perfect Elasticity",
+      data: [10, 10, 10], //demand info
+      fill: false,
+      borderColor: '#000000',
+      backgroundColor: '#000000',
+    }],
+  },
+    options: {          
+        showLines: true, // disable for all datasets   
+        scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Quantity'
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Price ($)'
+                        }
+                    }]
+                }
+      },
+    });
+
+    //relElastic
+    var ctx = document.getElementById("relElastic").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    
+   data: {
+     labels: ["0","10", "20"],
+      datasets: [
+       {
+      label: "Relativly Elastic",
+      data: [10, 9, 8], //demand info
+      fill: false,
+      borderColor: '#000000',
+      backgroundColor: '#000000',
+    }],
+  },
+    options: {          
+        showLines: true, // disable for all datasets   
+        scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Quantity'
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        ticks: {
+                          suggestedMax: 15,
+                          suggestedMin: 0,
+                        },
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Price ($)'
+                        }
+                    }]
+                }
+      },
+    });

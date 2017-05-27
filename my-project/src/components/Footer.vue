@@ -21,7 +21,7 @@ export default {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  padding-bottom: 200px;
+  padding-bottom: 20px;
   background-color: #efefef;
   text-align: center;
 }
