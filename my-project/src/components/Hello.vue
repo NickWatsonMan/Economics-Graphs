@@ -6,10 +6,12 @@
         <div id="result">
           <h1></h1>
         </div>
+
         <div style="width: 400px">
-        <canvas id="demandSupplyChart" width="400" height="400"></canvas>
-        <p>Demand and Supply</p>
+          <canvas id="demandSupplyChart" width="400" height="400"></canvas>
+          <p>Demand and Supply</p>
         </div>
+        
   </div>
 </template>
 <script>
